@@ -41,7 +41,9 @@ public class Reduce {
     }
 
     public Double getMedianInLinkList(SingleLink singleLink) {
-        throw new NotImplementedException();
+        Integer left = (Integer) singleLink.getNode(arrayList.size() / 2);
+        Integer right = (Integer) singleLink.getNode(arrayList.size() / 2 + 1);
+        return (left + right) / 2.0;
     }
 
     public int getLastOdd() {
